@@ -34,7 +34,10 @@ def main():
 
     human1 = Human("Derek")
     archer1 = Archer(human1.get_name(),4)
-    print(archer1.get_name())
-    print(archer1.get_num_arrows())
+    crossbowman1 = Crossbowman("Tim", 5)
+    print(f"Archer name inheritance from class Human: {human1.get_name()}")
+    print(f"Archer's arrows number : {archer1.get_num_arrows()}")
+    print(f"Crossbowman name inheritance from class Archer: {crossbowman1.get_name()}")
+    print(f"Crossbowman's bolts number inheritance from class Archer: {crossbowman1.get_num_arrows()}")
 
 main()
