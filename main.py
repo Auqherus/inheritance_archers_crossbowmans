@@ -15,8 +15,15 @@ class Archer(Human):
         
     def get_num_arrows(self):
         return self.__num_arrows
-    
+    '''
     def use_arrows(self, num):
+        if self.num_arrows >= num:
+            self.num_arrows -= num
+        else:
+            raise ValueError("not enough arrows")  # alternative usage
+    '''
+    
+    def use_arrows(self, num):   
         self.__num_arrows -= num
         if self.__num_arrows < 0:
             self.__num_arrows += num
